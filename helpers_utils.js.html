@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>helpers/utils.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Assessment.html">Assessment</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Assessment.html#.init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-AssessmentLimiter.html">AssessmentLimiter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-AssessmentLimiter.html#.mount">mount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-AssessmentLimiter.html#.update">update</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-AssessmentTable.html">AssessmentTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-AssessmentTable.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-filters.html">filters</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-filters.html#.safeCurrency">safeCurrency</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Overview.html">Overview</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Overview.html#.init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewCommon.html">OverviewCommon</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.createTableRowsByFields">createTableRowsByFields</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.getDetailsTags">getDetailsTags</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.getRecruitmentPurpose">getRecruitmentPurpose</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.hasAccessibility">hasAccessibility</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.hasCandidateReuse">hasCandidateReuse</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.isConfidentialVacancy">isConfidentialVacancy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.isPositionForDisability">isPositionForDisability</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.isSalaryAboveMidPoint">isSalaryAboveMidPoint</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.isUnexpectedStaffIncrease">isUnexpectedStaffIncrease</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewHeader.html">OverviewHeader</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewHeader.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewTabAttachments.html">OverviewTabAttachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewTabAttachments.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewTabDetails.html">OverviewTabDetails</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewTabDetails.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewTabPosition.html">OverviewTabPosition</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewTabPosition.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewTabRequirements.html">OverviewTabRequirements</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewTabRequirements.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewTabSalary.html">OverviewTabSalary</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewTabSalary.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Request.html">Request</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Request.html#.init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestContract.html">RequestContract</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestContract.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestDetails.html">RequestDetails</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestDetails.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestIntern.html">RequestIntern</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestIntern.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestLocalization.html">RequestLocalization</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestLocalization.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestRequirements.html">RequestRequirements</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestRequirements.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestResult.html">RequestResult</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestResult.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestReview.html">RequestReview</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestReview.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-utils.html">utils</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.currencyToNumber">currencyToNumber</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.durationToDecimal">durationToDecimal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.formatListCase">formatListCase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.formatTextBreaks">formatTextBreaks</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.getDateFromTime">getDateFromTime</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.getDifferenceInMs">getDifferenceInMs</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.isCurrency">isCurrency</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.isValidDuration">isValidDuration</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.isValidTime">isValidTime</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.msToTime">msToTime</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.numberToCurrency">numberToCurrency</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.setValue">setValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.timePadZero">timePadZero</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Workload.html">Workload</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Workload.html#.init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html">WorkloadAlertTemplate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.hourlyAlert">hourlyAlert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.internAlert">internAlert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.monthlyAlert">monthlyAlert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.multipleJourneyAlert">multipleJourneyAlert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.positionAlert">positionAlert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.teacherAlert">teacherAlert</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadLimiter.html">WorkloadLimiter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadLimiter.html#.limit">limit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadLimiter.html#.mount">mount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadLimiter.html#.update">update</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadPositions.html">WorkloadPositions</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadSalary.html">WorkloadSalary</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadSalary.html#.limit">limit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadSalary.html#.mount">mount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadSalary.html#.setType">setType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadSalary.html#.update">update</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadTable.html">WorkloadTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadTable.html#.mount">mount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadTable.html#.setWeekMode">setWeekMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadTable.html#.update">update</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadType.html">WorkloadType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadType.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadUtils.html">WorkloadUtils</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadUtils.html#.getCurrentLimit">getCurrentLimit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadUtils.html#.isValidRange">isValidRange</a></span></li><li class="nav-heading">Events</li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="module-Workload.html#.event:workload-change">workload-change</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">helpers/utils.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module utils
+ * @description Funções utilitárias para uso geral
+ */
+
+export const currencyFormatter = new Intl.NumberFormat('pt-BR', {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2
+})
+
+/**
+ * Verifica se uma string respeita o formato de horário HH:MM
+ * @param {string} time horário no formato HH:MM
+ * @returns {boolean}
+ */
+export function isValidTime (time) {
+  const [HH, MM] = time.split(':')
+
+  return !isNaN(
+    Date.parse(`2000-01-01T${HH}:${MM}:00`)
+  )
+}
+
+/**
+ * Verifica se uma string respeita o formato de duração em HH:MM,
+ * limitando a duração em horas até 99h
+ * @param {string} duration duração no formato [HH]:MM
+ * @returns {boolean}
+ */
+export function isValidDuration (duration) {
+  const MM = duration.split(':')[1]
+
+  return !(!MM || MM.length !== 2 || MM > parseInt(59))
+}
+
+/**
+ * Calcula a diferença entre datas em milissegundos
+ * @param {Date} start data inicial
+ * @param {Date} end data final
+ * @returns {number} diferença em milissegundos
+ */
+export function getDifferenceInMs (start, end) {
+  return end.getTime() - start.getTime()
+}
+
+/**
+ * Obtém um objeto data de uma string horário no formato HH:MM
+ * @param {string} time horário no formato HH:MM
+ * @returns {?Date}
+ */
+export function getDateFromTime (time) {
+  const isValid = isValidTime(time)
+
+  if (!isValid) {
+    return null
+  }
+
+  const [HH, MM] = time.split(':')
+
+  return new Date(`2000-01-01T${HH}:${MM}:00`)
+}
+
+/**
+ * @typedef {Object} Duration
+ * @property {string} mask máscara em [HH]:MM
+ * @property {number} hour quantidade de horas
+ * @property {number} minutes quantidade de minutos
+ * @property {number} seconds quantidade de segundos
+ * @property {number} milliseconds quantidade de milissegundos
+ */
+
+/**
+ * Calcula determinada duração em horas, minutos, segundos
+ * e minutos separadamente. Além de informar a duração com a
+ * máscara [HH]:MM
+ *
+ * @param {string} duration duração em milissegundos
+ * @returns {Duration}
+ */
+export function msToTime (duration) {
+  const hours = Math.floor((duration / (1000 * 60 * 60)))
+  const minutes = Math.floor((duration / (1000 * 60)) % 60)
+  const seconds = Math.floor((duration / 1000) % 60)
+  const milliseconds = parseInt((duration % 1000) / 100)
+
+  return {
+    mask: `${timePadZero(hours)}:${timePadZero(minutes)}`,
+    hours,
+    minutes,
+    seconds,
+    milliseconds
+  }
+}
+
+/**
+ * Converte uma string no formato [HH]:MM em decimal
+ * @param {string} duration duração no formato [HH]:MM
+ * @returns {?number}
+ */
+export function durationToDecimal (duration) {
+  const isValid = isValidDuration(duration)
+
+  if (!isValid) {
+    return null
+  }
+
+  const [HH, MM] = duration.split(':')
+
+  return parseInt(HH) + parseInt(MM) / 60
+}
+
+/**
+ * Adiciona `0` em horários menores que 10
+ * @example 5 => 05
+ * @param {string} time tempo
+ * @returns {string}
+ */
+export function timePadZero (time) {
+  return (time).toString().padStart(2, '0')
+}
+
+/**
+ * Transforma uma string monetária em número.
+ * Quando informado strings vazias o valor 0 é retornado
+ * @example '1.000,50' => 1000.5
+ * @param {string} currencyValue valor monetário pt-BR
+ * @returns {number}
+ */
+export function currencyToNumber (currencyValue) {
+  return parseFloat(
+    currencyValue
+      .replace(/\./g, '')
+      .replace(',', '.') || 0
+  )
+}
+
+/**
+ * Verifica se o valor está no formato monetário
+ * @param {string|number} value - valor
+ * @returns {boolean}
+ */
+export function isCurrency (value) {
+  if (typeof value !== 'string') {
+    return false
+  }
+
+  const [int, frac] = (value).split(',')
+  const isValidFormat = (frac || '').length === 2 &amp;&amp; !isNaN(parseInt(int))
+
+  return isValidFormat
+}
+
+/**
+ * Transforma um número em valor monetário pt-BR
+ * @param {number} number valor
+ * @returns {string} valor monetário
+ */
+export function numberToCurrency (number) {
+  return currencyFormatter.format(number)
+}
+
+/**
+ * Altera o valor de um input disparando o evento de `change`
+ * @param {HTMLInputElement} input
+ * @param {String|Number} value valor a ser modificado
+ */
+export function setValue (input, value) {
+  input.value = value
+  input.dispatchEvent(new Event('change'))
+}
+
+/**
+ * Altera a formatação de um texto, deixando somente as letras
+ * iniciais maiúsculas.
+ *
+ * @example
+ * - SOU UM ITEM
+ * - SOU OUTRO ITEM
+ *
+ * - Sou um item
+ * - Sou outro item
+ *
+ * @param {string} text lista para formatação
+ * @returns {string} lista formatada
+ */
+export function formatListCase (text = '') {
+  const formatted = text
+    .split('- ')
+    .map(item =>
+      item.charAt(0).toUpperCase() +
+      item.slice(1).toLowerCase()
+    )
+    .join('- ')
+
+  return formatTextBreaks(formatted)
+}
+
+/**
+ * Formata quebra de linhas para o formato `\n` exclusivamente
+ * @param {string} text texto para formatação
+ * @returns {string} texto formatado
+ */
+export function formatTextBreaks (text = '') {
+  return text
+    .replace(/\\r\\n$/, '')
+    .replaceAll('\\r\\n', '\n')
+    .trim()
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on Wed Jul 21 2021 10:01:31 GMT-0300 (Horário Padrão de Brasília) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

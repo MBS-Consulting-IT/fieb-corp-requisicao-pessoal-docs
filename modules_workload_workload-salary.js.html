@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>modules/workload/workload-salary.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Assessment.html">Assessment</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Assessment.html#.init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-AssessmentLimiter.html">AssessmentLimiter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-AssessmentLimiter.html#.mount">mount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-AssessmentLimiter.html#.update">update</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-AssessmentTable.html">AssessmentTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-AssessmentTable.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-filters.html">filters</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-filters.html#.safeCurrency">safeCurrency</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Overview.html">Overview</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Overview.html#.init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewCommon.html">OverviewCommon</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.createTableRowsByFields">createTableRowsByFields</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.getDetailsTags">getDetailsTags</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.getRecruitmentPurpose">getRecruitmentPurpose</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.hasAccessibility">hasAccessibility</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.hasCandidateReuse">hasCandidateReuse</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.isConfidentialVacancy">isConfidentialVacancy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.isPositionForDisability">isPositionForDisability</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.isSalaryAboveMidPoint">isSalaryAboveMidPoint</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewCommon.html#.isUnexpectedStaffIncrease">isUnexpectedStaffIncrease</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewHeader.html">OverviewHeader</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewHeader.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewTabAttachments.html">OverviewTabAttachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewTabAttachments.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewTabDetails.html">OverviewTabDetails</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewTabDetails.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewTabPosition.html">OverviewTabPosition</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewTabPosition.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewTabRequirements.html">OverviewTabRequirements</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewTabRequirements.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OverviewTabSalary.html">OverviewTabSalary</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OverviewTabSalary.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Request.html">Request</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Request.html#.init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestContract.html">RequestContract</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestContract.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestDetails.html">RequestDetails</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestDetails.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestIntern.html">RequestIntern</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestIntern.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestLocalization.html">RequestLocalization</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestLocalization.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestRequirements.html">RequestRequirements</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestRequirements.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestResult.html">RequestResult</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestResult.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-RequestReview.html">RequestReview</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-RequestReview.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-utils.html">utils</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.currencyToNumber">currencyToNumber</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.durationToDecimal">durationToDecimal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.formatListCase">formatListCase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.formatTextBreaks">formatTextBreaks</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.getDateFromTime">getDateFromTime</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.getDifferenceInMs">getDifferenceInMs</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.isCurrency">isCurrency</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.isValidDuration">isValidDuration</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.isValidTime">isValidTime</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.msToTime">msToTime</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.numberToCurrency">numberToCurrency</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.setValue">setValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-utils.html#.timePadZero">timePadZero</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Workload.html">Workload</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Workload.html#.init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html">WorkloadAlertTemplate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.hourlyAlert">hourlyAlert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.internAlert">internAlert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.monthlyAlert">monthlyAlert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.multipleJourneyAlert">multipleJourneyAlert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.positionAlert">positionAlert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadAlertTemplate.html#.teacherAlert">teacherAlert</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadLimiter.html">WorkloadLimiter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadLimiter.html#.limit">limit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadLimiter.html#.mount">mount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadLimiter.html#.update">update</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadPositions.html">WorkloadPositions</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadSalary.html">WorkloadSalary</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadSalary.html#.limit">limit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadSalary.html#.mount">mount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadSalary.html#.setType">setType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadSalary.html#.update">update</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadTable.html">WorkloadTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadTable.html#.mount">mount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadTable.html#.setWeekMode">setWeekMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadTable.html#.update">update</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadType.html">WorkloadType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadType.html#.mount">mount</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-WorkloadUtils.html">WorkloadUtils</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadUtils.html#.getCurrentLimit">getCurrentLimit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-WorkloadUtils.html#.isValidRange">isValidRange</a></span></li><li class="nav-heading">Events</li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="module-Workload.html#.event:workload-change">workload-change</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">modules/workload/workload-salary.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { currencyToNumber, numberToCurrency, durationToDecimal } from '../../helpers/utils'
+import { getCurrentLimit, isValidRange } from './workload-utils'
+
+/**
+ * Realiza o cálculo de salário conforme os diferentes tipos de vínculo
+ *
+ * @module WorkloadSalary
+ */
+const WorkloadSalary = function () {
+  const $refs = {
+    card: document.querySelector('#card-salary'),
+    stackInput: document.querySelector('#salary-stack-input'),
+    salaryProposed: document.querySelector('[xname=inpsalarioProposto]'),
+    salaryBase: document.querySelector('[xname=inpsalarioBaseRef]'),
+    midPoint: document.querySelector('[xname=inppontoMedioRef]'),
+    maxPoint: document.querySelector('[xname=inppontoMaximoRef]'),
+    monthlySalary: {
+      base: document.querySelector('[xname=inpsalarioBase]'),
+      mid: document.querySelector('[xname=inppontoMedio]'),
+      max: document.querySelector('[xname=inppontoMaximo]')
+    },
+    hourlySalary: {
+      base: document.querySelector('[xname=inpsalarioBaseHora]'),
+      mid: document.querySelector('[xname=inppontoMedioHora]'),
+      max: document.querySelector('[xname=inppontoMaximoHora]')
+    }
+  }
+
+  /**
+   * @memberof module:WorkloadSalary
+   * @property {object} validator - instância do componente `TaskValidator`
+   * @property {?HTMLElement} alert - alerta de salário proposto
+   * @property {?boolean} isHourly - indica se deve ser cálculo de horista
+   * @property {?boolean} isProportional - indica se deve ser calculado o salário se utilizando de proporação
+   * @property {?boolean} isIntern - indica se é vínculo de estágio
+   * @property {number} currentWorkload - carga horária atual
+   * @property {object[]} limits - intervalos de carga horária
+   * @property {string} validatorWarningType - tipo de erro utilizado no componente `TaskValidator`
+   */
+  const state = {
+    validator: null,
+    alert: null,
+    isHourly: null,
+    isProportional: null,
+    isIntern: false,
+    currentWorkload: 0,
+    limits: [],
+    validatorWarningType: 'salary_limit'
+  }
+
+  /**
+   * Mensagens de alerta para salário proposto
+   * @memberof module:WorkloadSalary
+   * @property {string} belowMinimumSalary - alerta para salário proposto abaixo da média (exclusivo para estágio)
+   * @property {string} belowBaseSalary - alerta para salário proposto abaixo do salário inicial
+   * @property {string} aboveMidSalary - alerta para salário proposto acima da média
+   * @property {string} aboveMaxSalary - alerta para salário proposto acima do teto
+   */
+  const ALERTS = {
+    belowMinimumSalary: '&lt;p>&lt;strong>Salário Inválido!&lt;/strong> Abaixo do &lt;strong>salário inicial&lt;/strong>.&lt;/p>',
+    belowBaseSalary: '&lt;p>Salário &lt;strong>abaixo&lt;/strong> do salário inicial.&lt;/p>',
+    aboveMidSalary: '&lt;p>Salário &lt;strong>acima&lt;/strong> do ponto médio.&lt;/p>',
+    aboveMaxSalary: '&lt;p>&lt;strong>Salário Inválido!&lt;/strong> Acima do ponto &lt;strong>máximo&lt;/strong>.&lt;/p>'
+  }
+
+  /**
+   * Base de cálculo mensal para proporção de salário do vínculo `Horista Intermitente`
+   * @memberof module:WorkloadSalary
+   * @type {number}
+   */
+  const PROPORTIONAL_BASE_IN_HOURS = 200
+
+  /**
+   * Base de cálculo semanal para proporção de salário dos vínculos mensalistas
+   * @memberof module:WorkloadSalary
+   * @type {number}
+   */
+  const WEEKLY_HOURLY_BASE_IN_HOURS = 40
+
+  return {
+    mount,
+    update,
+    limit,
+    setType
+  }
+
+  /**
+   * 🔑 Métodos Públicos
+   */
+
+  /**
+   * Realiza a montagem do módulo
+   * @public
+   * @memberof module:WorkloadSalary
+   * @param {object} config.validator - instância global do validator
+   */
+  function mount ({ validator }) {
+    state.validator = validator
+
+    addTriggers()
+    handleShine()
+  }
+
+  /**
+   * Atualiza a carga horária atual e as faixas salariais do cargo (quando há cálculo de proporção)
+   * @public
+   * @memberof module:WorkloadSalary
+   * @param {string} workloadMask - carga horário no formato duração [hh]:mm
+   */
+  function update (workloadMask) {
+    const { isHourly, isProportional } = state
+
+    state.currentWorkload = durationToDecimal(workloadMask)
+
+    setBaseSalary({ isHourly, isProportional })
+  }
+
+  /**
+   * Define as faixas de carga horária
+   * @public
+   * @memberof module:WorkloadSalary
+   * @param {object[]} config.workload - faixas de carga horária
+   */
+  function limit ({ workload }) {
+    state.limits = workload
+  }
+
+  /**
+   * Define os parâmetros de cálculo de salário (horista/mensalista, proporção, estágio)
+   * @public
+   * @memberof module:WorkloadSalary
+   * @param {boolean} config.isHourly - indica se deve ser cálculo de horista
+   * @param {boolean} config.isProportional - indica se deve ser calculado o salário se utilizando de proporação
+   * @param {boolean} config.isIntern - indica se é vínculo de estágio
+   */
+  function setType ({ isHourly, isProportional, isIntern }) {
+    state.isHourly = isHourly
+    state.isProportional = isProportional
+    state.isIntern = isIntern
+
+    setBaseSalary({ isHourly, isProportional })
+  }
+
+  /**
+   * 🔒 Métodos Privados
+   */
+
+  function addTriggers () {
+    const salariesByType = [
+      $refs.hourlySalary.base,
+      $refs.hourlySalary.mid,
+      $refs.hourlySalary.max,
+      $refs.monthlySalary.base,
+      $refs.monthlySalary.mid,
+      $refs.monthlySalary.max
+    ]
+
+    const salaryRefs = [
+      $refs.salaryBase,
+      $refs.salaryProposed
+    ]
+
+    /**
+     * Utilizando jQuery nos triggers para reagir a mudanças em campos do tipo `sugestão`
+     */
+    salariesByType.forEach(input => {
+      $(input).on('change', () =>
+        setBaseSalary({ isHourly: state.isHourly, isProportional: state.isProportional })
+      )
+    })
+
+    salaryRefs.forEach(input => {
+      input
+        .addEventListener('change', handleSalaryChange)
+    })
+
+    $refs.salaryProposed
+      .addEventListener('keyup', handleShine)
+  }
+
+  function handleSalaryChange () {
+    const salaryProposed = currencyToNumber($refs.salaryProposed.value)
+    const isProposedEmpty = $refs.salaryProposed.value === ''
+    const salaryBase = $refs.salaryBase.value
+    const midPoint = $refs.midPoint.value
+    const maxPoint = $refs.maxPoint.value
+    const isAnyEmpty = [salaryBase, midPoint, maxPoint]
+      .some(value => value === '')
+
+    removeAlert()
+    removeTaskWarning()
+
+    if (isAnyEmpty || isProposedEmpty) return
+
+    if (state.isIntern &amp;&amp; salaryProposed === 0) return
+
+    if (state.isIntern &amp;&amp; salaryProposed &lt; midPoint) {
+      addInternWarning()
+      return addAlert('danger', ALERTS.belowMinimumSalary)
+    }
+
+    if (salaryProposed > maxPoint) {
+      addTaskWarning()
+      return addAlert('danger', ALERTS.aboveMaxSalary)
+    }
+
+    if (salaryProposed &lt; salaryBase) {
+      return addAlert('warning', ALERTS.belowBaseSalary)
+    }
+
+    if (salaryProposed > midPoint &amp;&amp; salaryProposed &lt;= maxPoint) {
+      return addAlert('warning', ALERTS.aboveMidSalary)
+    }
+  }
+
+  function setBaseSalary ({ isHourly, isProportional }) {
+    const {
+      salaryBase,
+      midPoint,
+      maxPoint
+    } = getSalary(isHourly, isProportional)
+
+    $refs.salaryBase.value = salaryBase
+    $refs.midPoint.value = midPoint
+    $refs.maxPoint.value = maxPoint
+
+    $refs.salaryBase.dispatchEvent(new Event('change'))
+    $refs.midPoint.dispatchEvent(new Event('change'))
+    $refs.maxPoint.dispatchEvent(new Event('change'))
+  }
+
+  function getSalary (isHourly, isProportional) {
+    if (isHourly) {
+      return getHourlySalary()
+    }
+
+    if (isProportional) {
+      return getIntermittentSalary()
+    }
+
+    return getMonthlySalary()
+  }
+
+  function getHourlySalary () {
+    return {
+      salaryBase: $refs.hourlySalary.base.value,
+      midPoint: $refs.hourlySalary.mid.value,
+      maxPoint: $refs.hourlySalary.max.value
+    }
+  }
+
+  function getIntermittentSalary () {
+    return {
+      salaryBase: parseFloat($refs.monthlySalary.base.value) / PROPORTIONAL_BASE_IN_HOURS,
+      midPoint: parseFloat($refs.monthlySalary.mid.value) / PROPORTIONAL_BASE_IN_HOURS,
+      maxPoint: parseFloat($refs.monthlySalary.max.value) / PROPORTIONAL_BASE_IN_HOURS
+    }
+  }
+
+  function getMonthlySalary () {
+    const proportion = getCurrentProportion(state.currentWorkload, state.limits)
+    const salaryBase = $refs.monthlySalary.base.value
+    const midPoint = parseFloat($refs.monthlySalary.mid.value) || salaryBase
+    const maxPoint = parseFloat($refs.monthlySalary.max.value) || salaryBase
+
+    if (proportion === 1) {
+      return {
+        salaryBase,
+        midPoint,
+        maxPoint
+      }
+    }
+
+    return {
+      salaryBase: Math.ceil(salaryBase * proportion),
+      midPoint: Math.ceil(midPoint * proportion),
+      maxPoint: Math.ceil(maxPoint * proportion)
+    }
+  }
+
+  function getCurrentProportion (currentWorkload, limits) {
+    if (!limits.length || state.isIntern) {
+      return 1
+    }
+
+    const maxLimits = limits.map(({ max }) => max)
+    const highestLimit = Math.max(...maxLimits)
+    const currentLimit = getCurrentLimit(currentWorkload, limits)
+    const refWorkload = isValidRange(currentWorkload, currentLimit)
+      ? currentWorkload
+      : highestLimit
+
+    return getWeeklyProportion(refWorkload)
+  }
+
+  function getWeeklyProportion (weeklyWorkload) {
+    return weeklyWorkload / WEEKLY_HOURLY_BASE_IN_HOURS
+  }
+
+  function handleShine () {
+    if ($refs.salaryProposed.value !== '') {
+      $refs.stackInput.classList
+        .remove('a-shine-focus')
+
+      $refs.salaryProposed
+        .removeEventListener('keyup', handleShine)
+    }
+  }
+
+  function addAlert (type, message) {
+    const alertHtml = salaryAlert(type, message)
+
+    removeAlert()
+
+    $refs.stackInput.classList.add(`-${type}`)
+    $refs.card.insertAdjacentHTML('afterend', alertHtml)
+    state.alert = $refs.card.nextElementSibling
+  }
+
+  function removeAlert () {
+    $refs.stackInput
+      .classList.remove('-warning', '-danger')
+
+    if (state.alert) {
+      state.alert.remove()
+      state.alert = null
+    }
+  }
+
+  function addTaskWarning () {
+    const current = $refs.salaryProposed.value
+    const limit = numberToCurrency($refs.maxPoint.value)
+    const type = state.validatorWarningType
+    const message =
+      `O salário proposto está acima do ponto máximo permitido. O valor informado foi R$ ${current} e o limite é R$ ${limit}.`
+
+    state.validator
+      .addErrors([{ type, message }])
+  }
+
+  function addInternWarning () {
+    const current = $refs.salaryProposed.value
+    const limit = numberToCurrency($refs.maxPoint.value)
+    const type = state.validatorWarningType
+    const message =
+      `O salário proposto para estágio deve ser exatamente o valor da bolsa: R$ ${limit}. O valor informado foi R$ ${current}.`
+
+    state.validator
+      .addErrors([{ type, message }])
+  }
+
+  function removeTaskWarning () {
+    state.validator
+      .removeErrors([state.validatorWarningType])
+  }
+}
+
+export default WorkloadSalary()
+
+const getAlertIconClass = type => {
+  if (type === 'warning') {
+    return 'fa-exclamation-circle'
+  }
+
+  if (type === 'danger') {
+    return 'fa-times-circle'
+  }
+
+  return ''
+}
+
+const salaryAlert = (type, message) => {
+  const iconClass = getAlertIconClass(type)
+
+  return `
+    &lt;div class="o-alert -full -${type} u-margin-top-4">
+      &lt;i class="o-alert-icon fas ${iconClass}">&lt;/i>
+      &lt;div class="o-alert-content">
+        &lt;p>${message}&lt;/p>
+      &lt;/div>
+    &lt;/div>
+  `
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on Wed Jul 21 2021 10:01:31 GMT-0300 (Horário Padrão de Brasília) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
